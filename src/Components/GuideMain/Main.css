@@ -1,0 +1,180 @@
+#flex-container {
+  background-color: #333;
+  padding: 5rem;
+  border-top: 1px solid #fc5;
+  border-bottom: 1px solid #fc5;
+}
+
+#flex-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#flex-container ul li {
+  width: 30%;
+  background-color: #fc5;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border: 1px solid #333;
+}
+
+#flex-container ul a {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  color: inherit;
+}
+
+#flex-container ul li:hover,
+#flex-container ul li:active {
+  color: #fc5;
+  border: 1px solid #fc5;
+  transform: scale(1.1);
+  background-color: #333;
+}
+
+#flex-container .done {
+  color: aliceblue;
+  background-color: rgb(116, 38, 38);
+  text-decoration: none;
+}
+
+.guide {
+  padding: 5rem 0rem;
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.guide h2 {
+  font-family: "Audiowide", cursive;
+  font-weight: 200;
+  color: #fc5;
+}
+.guide .textSection {
+  max-width: 70%;
+  padding: 6rem 4rem;
+  border-radius: 0.5rem;
+  background: #00000099;
+}
+.guide .discord_link {
+  margin: 0 1rem;
+  color: #fff;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+.guide .discord_link:hover,
+.guide .discord_link:active {
+  color: #fc5;
+  transform: skew(4deg);
+}
+
+.guide .multiSection {
+  max-width: 70%;
+  padding: 6rem 4rem;
+  border-radius: 0.5rem;
+  background: #00000099;
+}
+.guide section {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.guide section.compare {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.guide p,
+.guide h3 {
+  margin: 2rem 0;
+}
+.guide p {
+  line-height: 2.5rem;
+}
+.guide hr {
+  margin-bottom: 2rem;
+}
+
+.guide ul li {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.guide-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.guide-btn {
+  min-width: 25rem;
+  max-width: 30rem;
+}
+
+.guide-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fc5;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.guide-btn a:hover {
+  background: #333;
+  color: #fc5;
+  border: 1px solid #fc5;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1030px) {
+  #flex-container ul li {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .guide-btns {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .guide .textSection {
+    max-width: 80%;
+  }
+  .guide .multiSection {
+    max-width: 80%;
+  }
+
+  #flex-container ul li {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .guide .textSection {
+    max-width: 90%;
+  }
+  .guide .multiSection {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,167 @@
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0.5rem 6rem;
+  background: rgba(51, 51, 51, 0.9);
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.navbar ul.active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu-icon,
+#mbl_status {
+  display: none;
+}
+
+.navbar li a {
+  color: #fff;
+  padding: 0px 1.5rem;
+}
+
+
+.data-tilt {
+  width: 300px;
+  padding: 0px;
+  margin: 0px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  color: rgb(54, 73, 98);
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: rgb(20 26 40 / 20%) 0px 7px 42px;
+  will-change: transform;
+  transform: perspective(1000px) rotateX(
+  0deg
+  ) rotateY(
+  0deg
+  ) scale3d(1, 1, 1);
+}
+.navbar li a:hover {
+  border-bottom: #fc5 1px solid;
+}
+
+.navbar .status-btn {
+  border: none;
+  color: white;
+  padding: 1rem 2.8rem;
+  margin-right: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.navbar .status-btn.online-btn {
+  background-color: #4caf50;
+}
+.navbar .status-btn.offline-btn {
+  background-color: red;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  font-family: "Audiowide";
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #f1f1f1;
+}
+
+.logo img {
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1030px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+  #nav-link {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+  }
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.438);
+    color: #000;
+    border-radius: 4rem;
+    font-size: 4rem;
+    width: 7rem;
+    height: 7rem;
+  }
+  #mbl_status {
+    display: block;
+  }
+  #pc_status {
+    display: none;
+  }
+
+  .navbar ul {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 120%;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    visibility: hidden;
+    border: 1px solid #333;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30%);
+  }
+  #nav-link .status-btn {
+    margin-right: 0;
+  }
+  .navbar ul li {
+    background: #fff;
+  }
+
+  .navbar #nav-link ul li a {
+    margin: 0 0 2rem;
+    font-size: 3rem;
+    color: #333;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 2rem;
+  }
+  .navbar #nav-link ul li a {
+    padding: 0px;
+  }
+}

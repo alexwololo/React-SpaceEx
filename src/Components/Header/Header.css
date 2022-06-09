@@ -1,0 +1,74 @@
+/* Hero img */
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  padding: 8rem 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hero .content h1 {
+  font-size: 6rem;
+  margin: 2rem;
+  font-family: "Audiowide";
+  font-weight: 300;
+}
+
+.hero .content p {
+  font-size: 2.5rem;
+  line-height: 120%;
+  margin-bottom: 5rem;
+}
+
+.server_status {
+  border-radius: 0.5rem;
+  background: rgba(51, 51, 51, 0.7);
+  margin-bottom: 3rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.status_row {
+  padding: 0.5rem 1rem;
+}
+.status_row > * {
+  margin-right: 1rem;
+}
+.status_row > i {
+  color: #ffcc55;
+}
+.status_row:not(:last-child) {
+  margin-right: 1rem;
+}
+.server_status .value {
+  font-weight: 700;
+}
+.server_status .uptime {
+  padding: 0.5rem 1rem;
+  background: green;
+  color: #fff;
+  border-radius: 0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding: 5rem 0 0;
+  }
+  .hero .content h1 {
+    font-size: 5rem;
+  }
+}

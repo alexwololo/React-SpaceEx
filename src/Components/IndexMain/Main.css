@@ -1,0 +1,72 @@
+#main-section {
+  background-color: #fc5;
+  color: #f1f1f1;
+}
+
+#main-section section {
+  border-top: 0.2rem solid #fc5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-text-container {
+  padding: 6rem;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+#main-section h2 {
+  font-family: "Audiowide";
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.flex-text-container h2 {
+  line-height: 3rem;
+  width: 40%;
+}
+
+.text-item-left {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.text-item-right {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.text-item-right h2 {
+  margin-left: auto;
+}
+
+.text-item-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-items a {
+    padding: 1.5rem 2rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .flex-text-container {
+    padding: 6rem 4rem;
+  }
+
+  .flex-text-container h2 {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .flex-text-container h2 {
+    width: 90%;
+  }
+  .flex-text-container {
+    padding: 4rem 2rem;
+  }
+}

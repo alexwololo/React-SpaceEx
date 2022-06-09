@@ -1,0 +1,6 @@
+#https per auto - annars varnar den för osäker hemsida
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#Tillåter användaren att uppdatera eller skriva routes
+FallbackResource /index.html

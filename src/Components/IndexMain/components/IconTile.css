@@ -1,0 +1,40 @@
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #f4f4f4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top: 0.2rem solid #fc5;
+}
+
+.flex-items a {
+  padding: 3rem 5rem;
+}
+
+/* Icons */
+.icon-tile {
+  flex: 1;
+  position: relative;
+}
+
+.icon-tile h3 {
+  flex: 1;
+  font-family: 'Audiowide';
+  font-weight: 400;
+  color: #fff;
+  padding: 1.5rem 0 1.5rem 0;
+  transition: 0.3s;
+}
+.icon-tile:hover h3 {
+  color: #fc5;
+  transform: scale(1.05) skewX(4deg);
+}
+
+.icon-tile i {
+  font-size: 4rem;
+}
